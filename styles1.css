@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+}
+
+.p2 {
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-align: center; /* Center-align the paragraph */
+}
+.why{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-align: center; /* Center-align the paragraph */
+}

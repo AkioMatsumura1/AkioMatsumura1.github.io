@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Love+Light&display=swap">
+</head>
+<body>
+    <div class="heart">
+        <i class="fa-solid fa-heart"></i>
+    </div>
+    <div class = "disclaimer">
+        <p id="t"><b>Hi,<b>Upama</b> I am Deepmalya ( or DP ) . I know I am not a very good Boyfriend. Never been one. I don't know what will happen in future so yeah I will just want to tell you some things.I already maybe told you but still and i recommend you to Screen record this as u go through this website cause it may not stay active for much time.
+            <br>
+
+
+            IK I AM BEING NERDY
+        
+        <br>
+        These Buttons are the paths where we are standing right now!! Yes I overthought I know but you know its important.</b>
+
+        <a href="love.html" target="_blank"><button class="b1">We are in a Loving Relationship</button></p></a>
+            <a href="sad.html" target="_blank"><button class="b2">We Broke up</button></a>
+            <br><br>
+
+            <p class="dd">DO YOU HAVE FEELINGS FOR ME EVEN NOW ,  IF WE BROKE UP ? ___________________________ write YES OR NO in caps"</p>
+            
+            <form id="submitForm">
+                <input class="input-field" type="text" id="feelingsInput" placeholder="Enter YES or NO" required>
+                <button type="submit" class="submit-btn">Submit</button>
+            </form>
+            <a id="yesLink" href="#" style="display: none;" target="_blank">Yes HTML Page</a>
+            <a id="noLink" href="#" style="display: none;" target="_blank">No HTML Page</a>
+            <a id="otherLink" href="#" style="display: none;" target="_blank">Other HTML Page</a>
+    
+    </p>
+    </div>
+    
+            
+        </div>
+    </div>
+    <script>
+        document.getElementById("submitForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            var inputValue = document.getElementById("feelingsInput").value.toUpperCase();
+            if (inputValue === "YES") {
+                document.getElementById("yesLink").href = "yes.html";
+                document.getElementById("yesLink").click();
+            } else if (inputValue === "NO") {
+                document.getElementById("noLink").href = "no.html";
+                document.getElementById("noLink").click();
+            } else {
+                document.getElementById("otherLink").href = "other.html";
+                document.getElementById("otherLink").click();
+            }
+        });
+    </script>
+
+</body>
+</html>
